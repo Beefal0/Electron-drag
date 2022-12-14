@@ -1,0 +1,27 @@
+{
+  "name": "electron-drag",
+  "version": "1.0.0",
+  "description": "Electron window drag",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beefal0/Electron-drag.git"
+  },
+  "keywords": [
+    "electron",
+    "drag"
+  ],
+  "author": "Beefal0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beefal0/Electron-drag/issues"
+  },
+  "homepage": "https://github.com/Beefal0/Electron-drag#readme",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}
