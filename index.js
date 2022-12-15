@@ -1,10 +1,11 @@
+// Operate dom instance，you can use ref in your react/vue project to get dom instance
 const target = document.getElementById('dragMask')
 target.onpointerdown = handlePointerDown
 target.onpointerup = handlePointerUp
 
 function handlePointerDown(e) {
+    // Triggered by the left mouse button
     if (e.button !== 0) return
-    if (e.target.nodeName === 'I') return
 
     window.electronAPI.windowDrag({
         draggable: true,

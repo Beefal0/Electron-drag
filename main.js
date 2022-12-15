@@ -48,6 +48,12 @@ const createWindow = () => {
                     const y = dragTarget.startPosition.y + cursorPosition.y - mouseStartY
                     
                     if (mainWindowNotDestroyed()) {
+                        /**
+                         * To dynamically change the window position, you must use setBounds instead of setPosition, and the width and height are fixed
+                         * Because when your screen zoom ratio is not 100%, the return value of getSize has a deviation of 1px,
+                         * and the underlying code of setPosition calls getSize, so calling setPosition frequently will make your window gradually larger
+                         * reference link: https://github.com/electron/electron/issues/9477
+                        */
                         mainWindow.setBounds({
                             width: 256,
                             height: 180,
